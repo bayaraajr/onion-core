@@ -1,11 +1,22 @@
-# Onion core
-Welcome to Onion core, a monorepo streamlined for crafting frontend application and libraries within a Dockerized environment. Leveraging Turbo Repo and Docker. This setup ensures an isolated development experience that is consisten across all environments.
+# Turborepo starter
+
+This is an official starter Turborepo.
+
+## Using this example
+
+Run the following command:
+
+```sh
+npx create-turbo@latest
+```
+
+## What's inside?
+
+This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `app`: a [React Native](https://reactnative.dev/) app
 - `docs`: a [Next.js](https://nextjs.org/) app
-- `management`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
 - `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
@@ -15,7 +26,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
-This monorepo has some additional tools  setup:
+This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
@@ -26,8 +37,8 @@ This monorepo has some additional tools  setup:
 To build all apps and packages, run the following command:
 
 ```
-cd onion-core
-npm build
+cd my-turborepo
+pnpm build
 ```
 
 ### Develop
@@ -36,7 +47,7 @@ To develop all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-npm dev
+pnpm dev
 ```
 
 ### Remote Caching
